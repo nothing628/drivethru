@@ -2,12 +2,33 @@
 
 require_once('connection.php');
 
-ob_start();
 include('views/header.php');
-echo "Hi world";
-echo $MYSQL_USER;
-echo $_SESSION['start_time']->format('Y-m-d H:i:s');
-include('views/footer.php');
-$result = ob_get_clean();
+?>
+<div class="container">
+    <div class="section">
+        <div class="row">
+            <div class="col s12 l12">
+                <h3>Harap Login</h3>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="User Name" id="first_name" type="text" class="validate">
+                        <label for="first_name">User Name</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="Password" id="password" type="password" class="validate">
+                        <label for="password">Password</label>
+                    </div>
+                </div>
 
-echo $result;
+                <button class="btn waves-effect waves-light" type="submit" name="action">Masuk ke Aplikasi
+                    <i class="material-icons right">send</i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<?php
+include('views/footer.php');
