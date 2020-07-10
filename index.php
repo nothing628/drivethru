@@ -5,7 +5,7 @@ require_once('connection.php');
 include('views/header.php');
 ?>
 <div class="container">
-    <div class="section">
+    <div class="section-login">
         <div class="row">
             <div class="col s12 l12">
                 <h3>Harap Login</h3>
@@ -31,4 +31,5 @@ include('views/header.php');
 </div>
 
 <?php
+include('views/copyright.php');
 include('views/footer.php');
